@@ -12,7 +12,7 @@
 	<artifactId>Mediacollect</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Mediacollect</name>
-	<description>Mediacollect</description>
+	<description>Spring boot webflux with mongodb reactive project for request and save programs and episodes of Spanish TV with urls to download</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>

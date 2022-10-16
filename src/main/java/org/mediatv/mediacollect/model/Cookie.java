@@ -1,27 +1,23 @@
 package org.mediatv.mediacollect.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import java.time.LocalDateTime;
 
-@ToString
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collation = "episodes")
-public class Episode {
+@Document
+public class Cookie {
 
     @MongoId
-    private String contentId;
-
-    private String formatId;
-
-    private String title;
-
-    private String mpd;
+    private String cookie;
 
     private LocalDateTime creationDate;
 }

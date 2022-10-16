@@ -4,6 +4,7 @@ import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @ToString
@@ -11,17 +12,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collation = "episodes")
-public class Episode {
+@Document (collection = "programs")
+public class Program implements Serializable {
 
     @MongoId
-    private String contentId;
-
     private String formatId;
 
     private String title;
-
-    private String mpd;
 
     private LocalDateTime creationDate;
 }
