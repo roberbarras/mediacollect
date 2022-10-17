@@ -68,8 +68,7 @@ public class ProgramService {
     }
 
     private void savePrograms(List<Program> programs) {
-        programs.stream().forEach(elem -> log.info("Programa: {}, FormatId: {}", elem.getTitle(), elem.getFormatId()));
-
+        programs.stream().forEach(program -> log.info("Programa: {}, FormatId: {}", program.getTitle(), program.getFormatId()));
         saveAll(programs);
     }
 }
